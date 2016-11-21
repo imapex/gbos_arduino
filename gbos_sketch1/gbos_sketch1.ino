@@ -40,15 +40,17 @@ void loop(){
   if (valMotion1 == HIGH) {                  // check if the input is HIGH
     digitalWrite(indicatorPin1, HIGH);       // turn LED ON
     digitalWrite(switch1Pin, HIGH);          // turn Switch 1 ON
+
+    // Output format {"Sensor":"Motion 1","Value":0/1,"Desc":"Motion Detected/Stopped"}    
     if (motion1State == LOW) {               // New Activity Detected
-      Serial.println("Motion 1 Active");
+      Serial.println("{\"Sensor\":\"Motion 1\",\"Value\":1,\"Desc\":\"Motion Detected\"}");
       motion1State = HIGH;
     }
   } else {
     digitalWrite(indicatorPin1, LOW);        // turn LED OFF
     digitalWrite(switch1Pin, LOW);           // turn Switch 1 Off
     if (motion1State == HIGH){               // Activity has Ended
-      Serial.println("Motion 1 Inactive");
+      Serial.println("{\"Sensor\":\"Motion 1\",\"Value\":0,\"Desc\":\"Motion Stopped\"}");
       motion1State = LOW;
     }
   }
