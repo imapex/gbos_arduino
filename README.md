@@ -21,6 +21,9 @@ This repository and README provide details on setting up just the gbos_arduino c
 * [gbos_demo](https://github.com/imapex/gbos_demo) - Full Demo Application Setup and Details
 * [gbos_iox](https://github.com/imapex/gbos_iox) - Details on the Cisco IOx Client Application 
 * [gbos_arduino](https://github.com/imapex/gbos_arduino) - Details on the Arduino Microcontroller Code 
+* [gbos_kiosk](https://github.com/imapex/gbos_kiosk) - Details on the Welcome Web Portal Page
+* [gbos_tropo](https://github.com/imapex/gbos_tropo) - Details on the Tropo Service for SMS based communication with visitors
+
 
 ---
 
